@@ -1,5 +1,6 @@
 package to.lodestone.barrierapi;
 
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 
 public interface IStorm {
@@ -21,4 +22,5 @@ public interface IStorm {
     void damage(Player player);
     int getTicksToMove();
     int getTicksToShrink();
+    boolean isInStorm(Entity entity);
 }
