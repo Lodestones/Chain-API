@@ -29,4 +29,10 @@ public interface IChainAPI {
     /** Turns dying together on or off, and saves it to the config. */
     void setDieTogether(boolean dieTogether);
 
+    /** The language Chain speaks: a locale code such as {@code ru_ru}, or {@code auto} for each player's own. */
+    String getLanguage();
+
+    /** Sets the language, a locale code or {@code auto}, and saves it to the config. */
+    void setLanguage(String language);
+
 }
