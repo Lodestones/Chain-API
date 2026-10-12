@@ -29,6 +29,17 @@ public interface IChainAPI {
     /** Turns dying together on or off, and saves it to the config. */
     void setDieTogether(boolean dieTogether);
 
+    /**
+     * Whether anyone can right-click a link to take hold of a chain and pull it around.
+     *
+     * <p>Off means the links are not clickable at all, so a chain is only ever moved by the two
+     * things it is tied to.
+     */
+    boolean isGrabbable();
+
+    /** Turns grabbing on or off, and saves it to the config. */
+    void setGrabbable(boolean grabbable);
+
     /** The language Chain speaks: a locale code such as {@code ru_ru}, or {@code auto} for each player's own. */
     String getLanguage();
 
